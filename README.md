@@ -22,7 +22,7 @@
 ```
 @property(nonatomic) BOOL hidesBottomBarWhenPushed __TVOS_PROHIBITED; // If YES, then when this view controller is pushed into a controller hierarchy with a bottom bar (like a tab bar), the bottom bar will slide out. Default is NO.
 ```
-在重写navigation此方法里面实现
+重写UINavigation方法
 ```
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 ```
