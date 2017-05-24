@@ -39,6 +39,15 @@
 # ReactiveCocoa/RAC
 
 #### 内存释放
+
+参考：
+
+[ReactiveCocoa中潜在的内存泄漏及解决方案](http://tech.meituan.com/potential-memory-leak-in-reactivecocoa.html)
+
+[“自释放”在iOS开发中的应用](http://www.olinone.com/?p=232)
+
+[ReactiveCocoa倒计时](https://segmentfault.com/a/1190000000633643)
+
 获取信号直到某个信号执行完成
 ```
 - (RACSignal *)takeUntil:(RACSignal *)signalTrigger;
@@ -48,7 +57,7 @@
 ```
 - (RACSignal *)rac_willDeallocSignal;
 ```
-takeUntil:self.rac_willDeallocSignal：意思为到self即将dealloc时释放此信号订阅
+takeUntil:self.rac_willDeallocSignal：意思为self即将dealloc时释放此信号订阅
 ```
     [[self.viewModel.cellClickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
         NSLog(@"cellClick");
