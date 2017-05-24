@@ -48,7 +48,7 @@
 
 [ReactiveCocoa倒计时](https://segmentfault.com/a/1190000000633643)
 
-获取信号直到‘signalTrigger’信号执行完成
+获取信号直到`signalTrigger`信号执行完成
 ```
 - (RACSignal *)takeUntil:(RACSignal *)signalTrigger;
 ```
