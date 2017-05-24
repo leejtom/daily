@@ -36,4 +36,26 @@
 ```
 
 
+# ReactiveCocoa/RAC
+
+#### 内存释放
+获取信号直到某个信号执行完成
+```
+- (RACSignal *)takeUntil:(RACSignal *)signalTrigger;
+```
+
+即将dealloc的时候会发出此信号
+```
+- (RACSignal *)rac_willDeallocSignal;
+```
+takeUntil:self.rac_willDeallocSignal：意思为到self即将dealloc时释放此信号订阅
+```
+    [[self.viewModel.cellClickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
+        NSLog(@"cellClick");
+    }];
+```
+
+
+
+
 
