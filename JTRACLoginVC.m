@@ -133,14 +133,17 @@
 	RACCommand *codeBtnCommand = [[RACCommand alloc]initWithEnabled:phoneEnableSignal signalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
 		return counterSigner(timerNumber);
 	}];
-	
+	//executionSignals： codeBtnCommand返回的信号
+	//switchToLatest： 获取signalOfSignals发送的最新信号
 	RACSignal *counterStringSignal=[[codeBtnCommand.executionSignals switchToLatest] map:^id(NSNumber *value) {
 		return [value stringValue];
 	}];
 	
-	//executing 监听当前命令是否正在执行
+	//executing 监听当前命令是否正在执行; 调用并创建的信号尚未终止时发送YES，终止时发送NO
 	//filrter 过滤
 	//mapReplace  map的简化版。替换
+	//总结：codeBtnCommand执行时，过滤掉value为YES的值，即等待codeBtnCommand执行终止讲这个信号值改成’获取验证码‘
+	
 	RACSignal *resetStringSignal=[[codeBtnCommand.executing filter:^BOOL(NSNumber *value) {
 		return !value.boolValue;
 	}] mapReplace:@"获取验证码"];
