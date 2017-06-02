@@ -62,8 +62,9 @@ takeUntil:self.rac_willDeallocSignal：意思为self即将dealloc时释放此信
         NSLog(@"cellClick");
     }];
 ```
+关于RAC什么时候使用@weakify(self)、@strongify(self) : viewcontroller需要，viewModel不需要
 
-
+ 
 
 
 
