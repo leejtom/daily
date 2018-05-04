@@ -39,7 +39,7 @@
 # ReactiveCocoa/RAC
 参考：
 
-[MVVMReactiveCocoaDemo介绍](https://github.com/wujunyang/MVVMReactiveCocoaDemo)
+[MVVMR‘eactiveCocoaDemo介绍](https://github.com/wujunyang/MVVMReactiveCocoaDemo)
 
 [ReactiveCocoa中潜在的内存泄漏及解决方案](http://tech.meituan.com/potential-memory-leak-in-reactivecocoa.html)
 
@@ -64,7 +64,10 @@ takeUntil:self.rac_willDeallocSignal：意思为self即将dealloc时释放此信
 ```
 关于RAC什么时候使用@weakify(self)、@strongify(self) : viewcontroller需要，viewModel与view不需要
 
- 
+# Masonry
+## 更新约束 
+在使用 'mas_updateConstraints' 方法更新约束是需要注意，保持与初始化时所使用的语句一致。如：
+初始化使用了 'make.width.mas_equalTo' 设置width，在更新约束时也应使用此语句。
 
 
 
