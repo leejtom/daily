@@ -1,12 +1,12 @@
 //
-//  PLVLCPlayerLogo.m
+//  PLVPlayerLogo.m
 //  PolyvLiveScenesDemo
 //
 //  Created by jiaweihuang on 2020/12/21.
 //  Copyright © 2020 polyv. All rights reserved.
 //
 
-#import "PLVLCPlayerLogo.h"
+#import "PLVPlayerLogo.h"
 
 @implementation PLVLCPlayerLogoParam
 
@@ -49,7 +49,7 @@
 
 @end
 
-@interface PLVLCPlayerLogo ()
+@interface PLVPlayerLogo ()
 
 @property (nonatomic, strong) UIView *container;
 
@@ -58,7 +58,7 @@
 
 @end
 
-@implementation PLVLCPlayerLogo
+@implementation PLVPlayerLogo
 
 #pragma mark - Life Cycle
 

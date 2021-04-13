@@ -1,5 +1,5 @@
 //
-//  PLVLCPlayerLogo.h
+//  PLVPlayerLogo.h
 //  PolyvLiveScenesDemo
 //
 //  Created by jiaweihuang on 2020/12/21.
@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, PLVLCPlayerLogoPosition) {
 
 @end
 
-@interface PLVLCPlayerLogo : UIView
+@interface PLVPlayerLogo : UIView
 
 /// 添加 logo，一个 PLVPlayerLogo 对象可同时添加最多两个 logo
 - (void)insertLogoWithParam:(PLVLCPlayerLogoParam *)param;

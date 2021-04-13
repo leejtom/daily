@@ -10,8 +10,8 @@
 		0434AE8B2611B359001FB061 /* leejtomOCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0434AE812611B358001FB061 /* leejtomOCFramework.framework */; };
 		0434AE902611B359001FB061 /* leejtomOCFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434AE8F2611B359001FB061 /* leejtomOCFrameworkTests.m */; };
 		0434AE922611B359001FB061 /* leejtomOCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0434AE842611B358001FB061 /* leejtomOCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F72ED7826259A5A00FC978E /* PLVLCPlayerLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72ED7626259A5A00FC978E /* PLVLCPlayerLogo.m */; };
-		8F72ED7926259A5A00FC978E /* PLVLCPlayerLogo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F72ED7726259A5A00FC978E /* PLVLCPlayerLogo.h */; };
+		8F72ED7826259A5A00FC978E /* PLVPlayerLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72ED7626259A5A00FC978E /* PLVPlayerLogo.m */; };
+		8F72ED7926259A5A00FC978E /* PLVPlayerLogo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F72ED7726259A5A00FC978E /* PLVPlayerLogo.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,8 @@
 		0434AE8A2611B359001FB061 /* leejtomOCFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leejtomOCFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434AE8F2611B359001FB061 /* leejtomOCFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = leejtomOCFrameworkTests.m; sourceTree = "<group>"; };
 		0434AE912611B359001FB061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F72ED7626259A5A00FC978E /* PLVLCPlayerLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLVLCPlayerLogo.m; sourceTree = "<group>"; };
-		8F72ED7726259A5A00FC978E /* PLVLCPlayerLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVLCPlayerLogo.h; sourceTree = "<group>"; };
+		8F72ED7626259A5A00FC978E /* PLVPlayerLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLVPlayerLogo.m; sourceTree = "<group>"; };
+		8F72ED7726259A5A00FC978E /* PLVPlayerLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVPlayerLogo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		0434AE832611B358001FB061 /* leejtomOCFramework */ = {
 			isa = PBXGroup;
 			children = (
-				8F72ED7526259A5A00FC978E /* LogoView */,
+				8F72ED7526259A5A00FC978E /* PLVLogoView */,
 				0434AE842611B358001FB061 /* leejtomOCFramework.h */,
 				0434AE852611B358001FB061 /* Info.plist */,
 			);
@@ -91,13 +91,13 @@
 			path = leejtomOCFrameworkTests;
 			sourceTree = "<group>";
 		};
-		8F72ED7526259A5A00FC978E /* LogoView */ = {
+		8F72ED7526259A5A00FC978E /* PLVLogoView */ = {
 			isa = PBXGroup;
 			children = (
-				8F72ED7626259A5A00FC978E /* PLVLCPlayerLogo.m */,
-				8F72ED7726259A5A00FC978E /* PLVLCPlayerLogo.h */,
+				8F72ED7626259A5A00FC978E /* PLVPlayerLogo.m */,
+				8F72ED7726259A5A00FC978E /* PLVPlayerLogo.h */,
 			);
-			path = LogoView;
+			path = PLVLogoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F72ED7926259A5A00FC978E /* PLVLCPlayerLogo.h in Headers */,
+				8F72ED7926259A5A00FC978E /* PLVPlayerLogo.h in Headers */,
 				0434AE922611B359001FB061 /* leejtomOCFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F72ED7826259A5A00FC978E /* PLVLCPlayerLogo.m in Sources */,
+				8F72ED7826259A5A00FC978E /* PLVPlayerLogo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
